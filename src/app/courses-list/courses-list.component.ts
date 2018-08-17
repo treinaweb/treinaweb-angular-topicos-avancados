@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-courses-list',
@@ -6,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./courses-list.component.css']
 })
 export class CoursesListComponent implements OnInit {
+  name = '';
 
-  constructor() { }
+  constructor(
+    private activatedRoute: ActivatedRoute
+  ) {
+    this.name = this.activatedRoute.snapshot.params['nome'];
+   }
 
   ngOnInit() {
   }

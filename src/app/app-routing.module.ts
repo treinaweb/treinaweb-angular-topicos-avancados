@@ -4,7 +4,7 @@ import { CoursesListComponent } from './courses-list/courses-list.component';
 
 const routes: Routes = [
   {
-    path: 'cursos',
+    path: 'cursos/:nome',
     component: CoursesListComponent
   }
 ];
