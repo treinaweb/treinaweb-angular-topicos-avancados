@@ -13,7 +13,13 @@ export class CoursesListComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
     private router: Router
   ) {
-    this.name = this.activatedRoute.snapshot.params['nome'];
+    //this.name = this.activatedRoute.snapshot.params['nome'];
+
+    this.activatedRoute.params.subscribe(
+      params => {
+        this.name = params['nome'];
+      }
+    )
    }
 
   ngOnInit() {
