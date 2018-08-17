@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-courses-list',
@@ -10,12 +10,14 @@ export class CoursesListComponent implements OnInit {
   name = '';
 
   constructor(
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private router: Router
   ) {
     this.name = this.activatedRoute.snapshot.params['nome'];
    }
 
   ngOnInit() {
+    //this.router.navigate(['/cursos/jquery']);
   }
 
 }
