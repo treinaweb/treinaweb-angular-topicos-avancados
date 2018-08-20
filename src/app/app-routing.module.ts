@@ -5,16 +5,6 @@ import { CoursesListComponent } from './courses-list/courses-list.component';
 import { BloqueadorGuard } from './guards/bloqueador.guard';
 
 const routes: Routes = [
-  {
-    path: 'cursos',
-    children: [
-      {
-        path: ':nome',
-        component: CoursesListComponent,
-        canDeactivate: [ BloqueadorGuard ]
-      }
-    ]
-  }
   
 ];
 
