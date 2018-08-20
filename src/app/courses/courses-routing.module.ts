@@ -5,13 +5,8 @@ import { CoursesListComponent } from '../courses-list/courses-list.component';
 
 const routes: Routes = [
   {
-    path: 'cursos',
-    children: [
-      {
-        path: ':nome',
-        component: CoursesListComponent
-      }
-    ]
+    path: ':nome',
+    component: CoursesListComponent
   }
 ];
 
