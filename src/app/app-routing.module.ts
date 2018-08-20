@@ -4,9 +4,15 @@ import { CoursesListComponent } from './courses-list/courses-list.component';
 
 const routes: Routes = [
   {
-    path: 'cursos/:nome',
-    component: CoursesListComponent
+    path: 'cursos',
+    children: [
+      {
+        path: ':nome',
+        component: CoursesListComponent
+      }
+    ]
   }
+  
 ];
 
 @NgModule({
