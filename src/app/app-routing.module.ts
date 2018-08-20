@@ -11,7 +11,7 @@ const routes: Routes = [
       {
         path: ':nome',
         component: CoursesListComponent,
-        canActivate: [ BloqueadorGuard ]
+        canDeactivate: [ BloqueadorGuard ]
       }
     ]
   }
