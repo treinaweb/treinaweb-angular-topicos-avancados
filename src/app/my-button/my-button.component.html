@@ -1,3 +1,11 @@
 <button class="my-button" [@btnState]="myState" (click)="toggleState()" >
   <ng-content></ng-content>
 </button>
+
+
+
+<ul>
+  <li @listState *ngFor="let item of myList; let i = index;" (click)="removeItem(i)" >
+    {{ item }}
+  </li>
+</ul>
