@@ -47,7 +47,7 @@ import {
       state('closed', style({
         height: 0
       })),
-      transition('open <=> closed', animate('100ms ease'))
+      transition('open <=> closed', animate('800ms cubic-bezier(0.680, -0.550, 0.265, 1.550)'))
     ])
   ]
 })
