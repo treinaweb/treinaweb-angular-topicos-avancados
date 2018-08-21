@@ -38,12 +38,23 @@ import {
           opacity: 0
         }))
       ])
+    ]),
+
+    trigger('listOpen', [
+      state('open', style({
+        height: '*'
+      })),
+      state('closed', style({
+        height: 0
+      })),
+      transition('open <=> closed', animate('100ms ease'))
     ])
   ]
 })
 export class MyButtonComponent implements OnInit {
   myState = 'active';
   myList = [];
+  myListState = 'open';
 
   constructor() { }
 
@@ -55,6 +66,10 @@ export class MyButtonComponent implements OnInit {
     this.myState = this.myState === 'active' ? 'inactive' : 'active';
   }
 
+  toggleListState(){
+    this.myListState = this.myListState === 'open' ? 'closed' : 'open';
+  }
+
   insertItem(){
     this.myList.push(this.myList.length);
   }
@@ -62,5 +77,7 @@ export class MyButtonComponent implements OnInit {
   removeItem(index){
     this.myList.splice(index, 1);
   }
+
+
 
 }

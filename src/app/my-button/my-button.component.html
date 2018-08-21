@@ -2,9 +2,9 @@
   <ng-content></ng-content>
 </button>
 
+<button (click)="toggleListState()" >Open / Close</button>
 
-
-<ul>
+<ul [@listOpen]="myListState" class="my-list" >
   <li @listState *ngFor="let item of myList; let i = index;" (click)="removeItem(i)" >
     {{ item }}
   </li>

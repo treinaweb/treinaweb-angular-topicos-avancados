@@ -3,3 +3,8 @@
     color: white;
     padding: 15px;
 }
+
+.my-list{
+    border: 1px solid black;
+    overflow: hidden;
+}
