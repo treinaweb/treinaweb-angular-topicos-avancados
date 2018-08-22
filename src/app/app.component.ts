@@ -9,5 +9,7 @@ export class AppComponent {
   title = 'my-app';
 
   numeroPessoas = 3243;
+  genero = 'm';
+
 
 }
