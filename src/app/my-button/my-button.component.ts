@@ -4,7 +4,8 @@ import {
   state,
   style,
   animate,
-  transition
+  transition,
+  keyframes
 } from '@angular/animations';
 
 @Component({
@@ -32,11 +33,22 @@ import {
         }),
         animate(300)
       ]),
-      transition('* => void', [
-        animate(300, style({
-          transform: 'translateX(30%)',
-          opacity: 0
-        }))
+      transition(':leave', [
+        animate(800, keyframes([
+          style({
+            backgroundColor: 'red',
+            offset: 0
+          }),
+          style({
+            width: '50%',
+            offset: 0.5
+          }),
+          style({
+            transform: 'translateX(30%)',
+            opacity: 0,
+            offset: 1
+          })
+        ]))
       ])
     ]),
 
