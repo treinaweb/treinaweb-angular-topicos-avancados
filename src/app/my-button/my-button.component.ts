@@ -102,6 +102,14 @@ export class MyButtonComponent implements OnInit {
     this.myList.splice(index, 1);
   }
 
+  animationStart(event){
+    console.log('start', event);
+  }
+
+  animationEnd(event){
+    console.log('end', event);
+  }
+
 
 
 }

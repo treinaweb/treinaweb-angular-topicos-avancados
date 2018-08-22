@@ -4,7 +4,7 @@
 
 <button (click)="toggleListState()" >Open / Close</button>
 
-<ul [@listOpen]="myListState" class="my-list" >
+<ul [@listOpen]="myListState" (@listOpen.start)="animationStart($event)"  (@listOpen.done)="animationEnd($event)" class="my-list" >
   <li @listState *ngFor="let item of myList; let i = index;" (click)="removeItem(i)" >
     {{ item }}
   </li>
