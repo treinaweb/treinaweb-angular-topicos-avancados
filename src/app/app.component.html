@@ -10,3 +10,11 @@
 <div i18n-title="title do nome" title="my name" i18n="Nome de usuario | Exibe o nome do usuario logado no sistema" >
     Name
 </div>
+
+<span i18n >
+    Numero: {numeroPessoas, plural, 
+        =0 { ninguem }
+        =1 { {{numeroPessoas}} pessoa }
+        other { {{numeroPessoas}} pessoas }
+    }
+</span>
