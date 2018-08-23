@@ -13,11 +13,9 @@ import { ListComponent } from './list/list.component';
     AppComponent,
     ListComponent
   ],
-  imports:[
- CommonModule,
-NgtUniversalModule,
- 
-    
+  imports: [
+    CommonModule,
+    NgtUniversalModule,
     AppRoutingModule,
     HttpClientModule
   ],

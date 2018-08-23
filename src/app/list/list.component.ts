@@ -14,7 +14,7 @@ export class ListComponent implements OnInit {
   constructor(
     private http: HttpClient,
     private activatedRoute: ActivatedRoute
-  ) { 
+  ) {
     this.query = this.activatedRoute.snapshot.params['query'];
   }
 
@@ -24,7 +24,7 @@ export class ListComponent implements OnInit {
         response => {
           this.list = response.items;
         }
-      )
+      );
   }
 
 }
