@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
+import { Observable } from 'rxjs';
+
 interface PokeListResponse{
   created: string,
   modified: string,
@@ -32,6 +34,10 @@ export class PokeapiService {
             .slice(0,9);
         }
       )
+  }
+
+  getPokemon(number: number): Observable<any>{
+    return this.http.get(`${this.url}/pokemon/${number}`);
   }
 
   private getNumberFromUrl(url){

@@ -6,6 +6,7 @@ import { PokedexRoutingModule } from './pokedex-routing.module';
 import { ListItemComponent } from './components/list-item/list-item.component';
 import { ListComponent } from './views/list/list.component';
 import { MyNumberPipe } from '../../pipes/my-number.pipe';
+import { InformationComponent } from './views/information/information.component';
 
 
 const CompList = [
@@ -21,7 +22,8 @@ const CompList = [
   ],
   declarations: [
     ...CompList,
-    MyNumberPipe
+    MyNumberPipe,
+    InformationComponent
   ],
   exports: [
     ...CompList
