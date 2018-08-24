@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="7e892ba15f2c6c17e83510e273b3e10fc32ea016" datatype="html">
+        <source>Search</source>
+        <target>Buscar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/pokedex/views/list/list.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cc70dc7dd1f56ed1c2664c624abaeb5036a35e9f" datatype="html">
+        <source>Attack</source>
+        <target>Ataque</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/pokedex/views/information/information.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="27212ff6d68b9aae00963b58f96b0e7cf2e1767d" datatype="html">
+        <source>Defense</source>
+        <target>Defesa</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/pokedex/views/information/information.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a51db83af7b951ae258d3d52a50b8e993fb451f1" datatype="html">
+        <source>Sp Atk</source>
+        <target>Atq Esp</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/pokedex/views/information/information.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0ab060cffb88aa21ffc2a1755ec069f72e03e2ba" datatype="html">
+        <source>Sp Def</source>
+        <target>Def Esp</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/pokedex/views/information/information.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c65e59841c2de7dba204ee5ecf7cc682e65f2488" datatype="html">
+        <source>Speed</source>
+        <target>Velocidade</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/modules/pokedex/views/information/information.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
