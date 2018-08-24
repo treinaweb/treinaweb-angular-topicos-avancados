@@ -1,4 +1,4 @@
-<li class="poke-list-item">
+<li class="poke-list-item" @listItemState >
   <a routerLink="./{{pokemon.number | myNumber}}">
     <img src="//serebii.net/pokedex-xy/icon/{{ pokemon.number | myNumber }}.png" >
     <span>{{ pokemon.number | myNumber }} - {{ pokemon.name }}</span>
