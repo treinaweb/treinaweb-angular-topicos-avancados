@@ -1,0 +1,29 @@
+#poke-filter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    padding: 10px;
+    border: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #666;
+    color: #fff; }
+  
+  #poke-filter:focus{
+    outline: none;
+  }
+
+  .selected-pkm{
+    position: fixed;
+    top: 35px;
+    left: 0;
+  }
+  
+  .poke-list {
+    float: right;
+    margin-top: 50px;
+    width: 70%;
+    text-transform: capitalize;
+    opacity: 0.95; }
+  

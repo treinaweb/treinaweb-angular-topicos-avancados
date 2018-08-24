@@ -1,24 +1,28 @@
-import { NgtUniversalModule } from '@ng-toolkit/universal';
-import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ListComponent } from './list/list.component';
+import { ListComponent } from './views/list/list.component';
+import { ListItemComponent } from './components/list-item/list-item.component';
+import { RollOnScrollDirective } from './directives/roll-on-scroll.directive';
+import { MyNumberPipe } from './pipes/my-number.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListComponent
+    ListComponent,
+    ListItemComponent,
+    RollOnScrollDirective,
+    MyNumberPipe
   ],
   imports: [
-    CommonModule,
-    NgtUniversalModule,
-    AppRoutingModule,
+    BrowserModule,
+    FormsModule,
     HttpClientModule
   ],
   providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,1 +1,125 @@
-/* You can add global styles to this file, and also import other style files */
+.pokeball-back {
+    position: fixed;
+    top: 50%;
+    left: -50%;
+    transform: translateY(-50%);
+    z-index: -100;
+    width: 100%;
+    opacity: 0.5;
+  }
+
+
+  #poke-filter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    padding: 10px;
+    border: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #666;
+    color: #fff; }
+  
+  #poke-filter:focus{
+    outline: none;
+  }
+
+  .selected-pkm{
+    position: fixed;
+    top: 35px;
+    left: 0;
+  }
+  
+  .poke-list {
+    float: right;
+    margin-top: 50px;
+    width: 70%;
+    text-transform: capitalize;
+    overflow-y: hidden;
+    opacity: 0.95; }
+  
+  .poke-list a{
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+.poke-list-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: 1px solid black;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    list-style: none;
+    background-color: #333;
+    color: white;
+    padding: 0;
+   }
+  .poke-list-item:hover {
+    background-color: #555; }
+  .poke-list-item img{
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+
+
+
+
+  .back-button{
+    display: inline-block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .poke-profile{
+    text-align: center;
+  }
+  
+  .poke-types{
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .poke-types li{
+    display: inline-block;
+    margin: 2px;
+  }
+  
+  table{
+    border-collapse: collapse;
+    background-color: rgba(255,255,255, 0.5);
+    margin: 50px auto 0 auto;
+  }
+  
+  td{
+    border: 1px solid;
+    padding: 5px;
+  }
+  
